@@ -1,14 +1,9 @@
-# app.py
 from flask import Flask
-import os
-
 app = Flask(__name__)
 
 @app.route('/')
-def hello():
-    return "Hello from my Custom GitOps App! Version 1.0\n"
+def hello_world():
+    return 'Hello from my Custom GitOps App! Version 2.0 - Auto-Synced by Argo CD!' # <--- Modify this line
 
 if __name__ == '__main__':
-    # Get the port from environment variable, default to 5000
-    port = int(os.environ.get("PORT", 5000))
-    app.run(debug=False, host='0.0.0.0', port=port)
+    app.run(host='0.0.0.0', port=5000)

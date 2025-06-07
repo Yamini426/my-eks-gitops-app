@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: hello-world-nginx
-        image: 534211282380.dkr.ecr.us-east-1.amazonaws.com/my-hello-app-repo:v1.0 # <--- YOUR AWS ACCOUNT ID IS HERE
+        image: 534211282380.dkr.ecr.us-east-1.amazonaws.com/my-hello-app-repo:v2.0 # <--- YOUR AWS ACCOUNT ID IS HERE
         ports:
         - containerPort: 5000 # Flask app runs on port 5000
 ---
